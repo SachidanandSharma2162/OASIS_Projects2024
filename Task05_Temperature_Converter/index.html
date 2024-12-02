@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3cc5ead6c0.js" crossorigin="anonymous"></script></head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Time and Icons Section -->
+        <div class="header">
+            <div class="time" id="currentTime"></div>
+            <div class="icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        
+        <!-- Converter Section -->
+        <div class="converter">
+            <h2>Temperature converter</h2>
+            
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="degrees">Degrees</label>
+                    <input type="number" id="degrees" placeholder="Enter temperature">
+                </div>
+                <div class="input-group">
+                    <label for="type">Type</label>
+                    <select id="type">
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="celsius">Celsius</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div>
+                <label id="result-text" for="result">Result</label>
+                <input type="text" id="result" readonly>
+            </div>
+            <button id="convert" onclick="convert()">Convert</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
